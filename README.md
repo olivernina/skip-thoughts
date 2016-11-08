@@ -1,22 +1,16 @@
 # skip-thoughts
 
-Sent2Vec encoder and training code from the paper [Skip-Thought Vectors](http://arxiv.org/abs/1506.06726).
+Sent2Vec encoder and training code from the paper [Skip-Thought Vectors](http://arxiv.org/abs/1506.06726). Based on this repository: https://github.com/ryankiros/skip-thoughts
 
-## Dependencies
-
-This code is written in python. To use it you will need:
-
-* Python 2.7
-* Theano 0.7
-* A recent version of [NumPy](http://www.numpy.org/) and [SciPy](http://www.scipy.org/)
-* [scikit-learn](http://scikit-learn.org/stable/index.html)
-* [NLTK 3](http://www.nltk.org/)
-* [Keras](https://github.com/fchollet/keras) (for Semantic-Relatedness experiments only)
-* [gensim](https://radimrehurek.com/gensim/) (for vocabulary expansion when training new models)
 
 ## Getting started
+Make sure to download the module files. You can use the script on the data folder
 
-You will first need to download the model files and word embeddings. The embedding files (utable and btable) are quite large (>2GB) so make sure there is enough space available. The encoder vocabulary can be found in dictionary.txt.
+    cd data
+    ./download.sh
+
+
+You can also download them one at a time. The embedding files (utable and btable) are quite large (>2GB) so make sure there is enough space available. The encoder vocabulary can be found in dictionary.txt.
 
     wget http://www.cs.toronto.edu/~rkiros/models/dictionary.txt
     wget http://www.cs.toronto.edu/~rkiros/models/utable.npy
